@@ -17,14 +17,14 @@
 
         <EditText
             android:id="@+id/searchText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="64dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:hint="search keyword" />
 
         <Button
             android:id="@+id/loadImagesButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="64dp"
             android:layout_weight="1"
             android:text="Search" />

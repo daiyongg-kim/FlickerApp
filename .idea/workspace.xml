@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0aa9e3c-d84e-441f-80ae-68b4a2492b83" name="Changes" comment="Flicker app without search keyword">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/retrofit/flickerapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/retrofit/flickerapp/MainActivity.kt" afterDir="false" />
+    <list default="true" id="d0aa9e3c-d84e-441f-80ae-68b4a2492b83" name="Changes" comment="update search">
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687401110718</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update search">
+      <created>1687402286843</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687402286844</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +177,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Flicker app without search keyword" />
-    <option name="LAST_COMMIT_MESSAGE" value="Flicker app without search keyword" />
+    <MESSAGE value="update search" />
+    <option name="LAST_COMMIT_MESSAGE" value="update search" />
   </component>
 </project>
