@@ -2,6 +2,7 @@ package com.example.retrofit.flickerapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
@@ -20,10 +21,11 @@ class MainActivity : AppCompatActivity() {
         binding.imagesRecyclerView.layoutManager = GridLayoutManager(this, 3)
         val photoViewModel : PhotosViewModel by viewModels()
 
-        //var myText = binding.searchText.text.toString()
+        var textView : TextView = findViewById(R.id.searchText)
+
         binding.loadImagesButton.setOnClickListener {
             binding.imagesRecyclerView.adapter = photoViewModel.photoAdapter
-            photoViewModel.loadPhotos("mouse")
+            photoViewModel.loadPhotos(textView.text.toString())
                 .observe(this, Observer { list ->
                     with (photoViewModel.photoAdapter) {
                         images.clear()
