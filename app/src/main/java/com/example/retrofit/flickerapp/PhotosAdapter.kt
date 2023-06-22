@@ -26,14 +26,12 @@ class PhotosAdapter(val images: MutableList<Image> = mutableListOf()) :
     }
 
     inner class PhotosViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val myView = itemView.findViewById<View>(R.id.imageView) as ImageView
 
         fun bind(image: Image) {
             Picasso.get().load(image.url)
                 .resize(512, 512)
                 .centerCrop()
-                .into(myView)
-//                .into(itemView?.findViewById(R.id.imageView))
+                .into(itemView.findViewById(R.id.imageView) as ImageView)
         }
     }
 }
