@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.retrofit.flickerapp.ImageRepository
-import com.example.retrofit.flickerapp.PhotosAdapter
+import com.example.retrofit.flickerapp.api.ImageRepository
+import com.example.retrofit.flickerapp.view.PhotosAdapter
 import com.example.retrofit.flickerapp.model.Image
 import com.example.retrofit.flickerapp.model.PhotoSearchResponse
 import kotlinx.coroutines.launch
@@ -13,7 +13,6 @@ import kotlinx.coroutines.launch
 class PhotosViewModel : ViewModel(){
     val imagesLiveData = MutableLiveData<List<Image>> ()
     var photoAdapter = PhotosAdapter()
-
 
     fun loadPhotos(search : String) : LiveData<List<Image>>
     {

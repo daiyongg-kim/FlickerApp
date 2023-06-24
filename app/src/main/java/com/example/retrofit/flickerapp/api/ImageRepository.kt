@@ -1,15 +1,9 @@
-package com.example.retrofit.flickerapp
+package com.example.retrofit.flickerapp.api
 
-
-import okhttp3.Interceptor.*
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-
-
-private const val baseURL = "https://www.flickr.com/services/rest/"
-
 
 object ImageRepository {
     val flickerApi: FlickerApi
